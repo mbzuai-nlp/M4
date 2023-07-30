@@ -45,7 +45,7 @@ five detectors, over single machine-text generator vs human.
 ### GPTZero 
 Zero-shot detection with GPTZero: recall (Rec) and F1-score with respect to generators and domains.
 <p align="center" width="100%">
-    <a><img src="image/gptzero.png" alt="Title" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/gptzero.png" alt="Title" style="width: 65%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Multilingual Evaluation 
@@ -57,7 +57,7 @@ Accuracy (%) based on XLM-R on test sets across different languages over ChatGPT
 ### Time Domain Evaluation
 Impact of ChatGPT updating by time. Accuracy (Acc), Precision (Prec), Recall and F1 scores(%) with respect to machine generations for Reddit-ELI5 from HC3 and M4 datasets based on XLM-R. HC3 dataset prompt ChatGPT earlier than M4 (Jan vs May).
 <p align="center" width="100%">
-    <a><img src="image/time.png" alt="Title" style="width: 40%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/time.png" alt="Title" style="width: 50%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
