@@ -15,21 +15,20 @@ We construct the dataset M4, and additionally study the performance of automatic
 <!-- /TOC -->
 
 ## Data
-Here are current statistics about the M4 dataset. It will be further extended in SemEval 2014 shared task 8 with surprising generators, domains and languages. 
-
+Here are the statistics information about the M4 dataset. It will be further extended in SemEval 2014 shared task 8 with surprising generators, domains and languages. 
 <p align="center" width="100%">
     <a><img src="image/data_statistics.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
 ## Models
-* RoBERTa, ELECTRA and XLM-R: fine-tune pre-trained RoBERTa, ELECTRA and XLM-R to detect machine-generated text.
+* RoBERTa, ELECTRA and XLM-R detector: fine-tune pre-trained RoBERTa, ELECTRA and XLM-R to detect machine-generated text.
 * Logistic Regression with GLTR Features
 * SVM classifier with Stylistic/NEws LAndscape (NELA) Features
 
 
 ## Evaluation
-We evaluate detectors in three settings:
+We evaluate detectors in five settings:
 ### Same-Generator, Cross-Domain
 Accuracy of cross-domain experiments: given generations from ChatGPT (top) or davinci (bottom),train on a single domain and test across domains across five detectors.
 <p align="center" width="100%">
