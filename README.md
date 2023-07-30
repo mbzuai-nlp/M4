@@ -18,36 +18,41 @@ We construct the dataset M4, and additionally study the performance of automatic
 Here are current statistics about the M4 dataset. It will be further extended in SemEval 2014 shared task 8 with surprising generators, domains and languages. 
 
 <p align="center" width="100%">
-    <a><img src="data_statistics.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/data_statistics.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
+
 ## Models
+* RoBERTa, ELECTRA and XLM-R: fine-tune pre-trained RoBERTa, ELECTRA and XLM-R to detect machine-generated text.
+* Logistic Regression with GLTR Features
+* SVM classifier with Stylistic/NEws LAndscape (NELA) Features
+
 
 ## Evaluation
 We evaluate detectors in three settings:
 ### Same-Generator, Cross-Domain
 <p align="center" width="100%">
-    <a><img src="same_generator.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/same_generator.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Same-Domain, Cross-Generator
 <p align="center" width="100%">
-    <a><img src="same_domain.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/same_domain.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### GPTZero Evaluation
 <p align="center" width="100%">
-    <a><img src="gptzero.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/gptzero.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Multilingual Evaluation 
 <p align="center" width="100%">
-    <a><img src="multilingual.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/multilingual.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Time Domain Evaluation
 <p align="center" width="100%">
-    <a><img src="time.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/time.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
