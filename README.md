@@ -31,28 +31,34 @@ Here are current statistics about the M4 dataset. It will be further extended in
 ## Evaluation
 We evaluate detectors in three settings:
 ### Same-Generator, Cross-Domain
+Accuracy of cross-domain experiments: given generations from ChatGPT (top) or davinci (bottom),train on a single domain and test across domains across five detectors.
 <p align="center" width="100%">
     <a><img src="image/same_generator.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Same-Domain, Cross-Generator
+Accuracy of cross-generator experiments: train and test on arXiv (top) and Wikipedia (bottom) across
+five detectors, over single machine-text generator vs human. 
 <p align="center" width="100%">
     <a><img src="image/same_domain.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
-### GPTZero Evaluation
+### GPTZero 
+Zero-shot detection with GPTZero: recall (Rec) and F1-score with respect to generators and domains.
 <p align="center" width="100%">
-    <a><img src="image/gptzero.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/gptzero.png" alt="Title" style="width: 60%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Multilingual Evaluation 
+Accuracy (%) based on XLM-R on test sets across different languages over ChatGPT and davinci-003.
 <p align="center" width="100%">
     <a><img src="image/multilingual.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 ### Time Domain Evaluation
+Impact of ChatGPT updating by time. Accuracy (Acc), Precision (Prec), Recall and F1 scores(%) with respect to machine generations for Reddit-ELI5 from HC3 and M4 datasets based on XLM-R. HC3 dataset prompt ChatGPT earlier than M4 (Jan vs May).
 <p align="center" width="100%">
-    <a><img src="image/time.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+    <a><img src="image/time.png" alt="Title" style="width: 40%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
