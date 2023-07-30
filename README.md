@@ -2,18 +2,14 @@
 
 Large language models (LLMs) are becoming mainstream and easily accessible, ushering in an explosion of machine-generated content over various channels, such as news, social media, question-answering forums, educational, and even academic contexts. Recent LLMs, such as ChatGPT and GPT-4, generate remarkably fluent responses to a wide variety of user queries. The articulate nature of such generated text makes LLMs attractive for replacing human labor in many scenarios. However, this has also resulted in concerns regarding their potential misuse, such as spreading misinformation and causing disruptions in the education system. Since humans perform only slightly better than chance when classifying machine-generated vs. human-written text, there is a need to develop automatic systems to identify machine-generated text with the goal of mitigating its potential misuse. 
 
-We mainly:
-* construct dataset M4
-* leverage diverse features including semantic, stylistic, and statistical based on token prediction probability using GPT-2 (GLTR) and features used for news veracity detection (NELA) to distinguish human-written vs. machine-generated text. 
-* analyze the evaluation results from various dimensions: (1) the performance of different detectors across different domains given a specific generator, (2) the performance of different detectors across different generative models for a specific domain, and (3) the impact on the performance by interactions of different domains and generators in a multilingual setting.
+We construct the dataset M4, and additionally study the performance of automatic detectors from various perspectives: (1) different detectors across different domains for a specific generator; (2) different detectors across different generators for a specific domain; (3) interactions of domains and generators in a multilingual setting, and (4) the performance of the detector on data generated from different time domains. From this, we draw some interesting observations.
+
 
 <!-- TOC -->
 
 - [Data](#data)
 - [Models](#models)
 - [Evaluation](#evaluation)
-    - [NLP Evaluation](#nlp-evaluation)
-    - [Human Evaluation](#human-evaluation)
 - [Citation](#citation)
 
 <!-- /TOC -->
@@ -23,6 +19,35 @@ Here are current statistics about the M4 dataset. It will be further extended in
 
 <p align="center" width="100%">
     <a><img src="data_statistics.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
+
+## Models
+
+## Evaluation
+We evaluate detectors in three settings:
+### Same-Generator, Cross-Domain
+<p align="center" width="100%">
+    <a><img src="same_generator.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
+
+### Same-Domain, Cross-Generator
+<p align="center" width="100%">
+    <a><img src="same_domain.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
+
+### GPTZero Evaluation
+<p align="center" width="100%">
+    <a><img src="gptzero.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
+
+### Multilingual Evaluation 
+<p align="center" width="100%">
+    <a><img src="multilingual.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
+</p>
+
+### Time Domain Evaluation
+<p align="center" width="100%">
+    <a><img src="time.png" alt="Title" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
