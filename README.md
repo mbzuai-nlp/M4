@@ -62,7 +62,7 @@ Impact of ChatGPT updating by time. Accuracy (Acc), Precision (Prec), Recall and
 
 
 ## Citation
-Please cite us if you use our data or models, see [EACL'2024 paper -- Best Resource Paper Award]([https://arxiv.org/abs/2305.14902](https://aclanthology.org/2024.eacl-long.83/)):
+Please cite us if you use our data or models, see [EACL'2024 paper -- Best Resource Paper Award](https://aclanthology.org/2024.eacl-long.83/):
 ```bibtex
 @inproceedings{wang-etal-2024-m4,
     title = "M4: Multi-generator, Multi-domain, and Multi-lingual Black-Box Machine-Generated Text Detection",
