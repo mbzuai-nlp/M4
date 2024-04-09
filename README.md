@@ -93,3 +93,7 @@ Please cite us if you use our data or models, see [EACL'2024 paper -- Best Resou
     abstract = "Large language models (LLMs) have demonstrated remarkable capability to generate fluent responses to a wide variety of user queries. However, this has also raised concerns about the potential misuse of such texts in journalism, education, and academia. In this study, we strive to create automated systems that can detect machine-generated texts and pinpoint potential misuse. We first introduce a large-scale benchmark M4, which is a multi-generator, multi-domain, and multi-lingual corpus for machine-generated text detection. Through an extensive empirical study of this dataset, we show that it is challenging for detectors to generalize well on instances from unseen domains or LLMs. In such cases, detectors tend to misclassify machine-generated text as human-written. These results show that the problem is far from solved and that there is a lot of room for improvement. We believe that our dataset will enable future research towards more robust approaches to this pressing societal problem. The dataset is available at https://github.com/mbzuai-nlp/M4",
 }
 ```
+
+## Shared task using an extension of this dataset
+We also have a shared using this data: [SemEval-2024 task 8](https://github.com/mbzuai-nlp/SemEval2024-task8/)
+
